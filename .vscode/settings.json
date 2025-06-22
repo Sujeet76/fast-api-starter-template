@@ -1,0 +1,54 @@
+{
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    "python.linting.enabled": false,
+    "python.formatting.provider": "none",
+    "ruff.enable": true,
+    "ruff.nativeServer": "on",
+    "ruff.configuration": {
+        "lint": {
+            "select": [
+                "E",
+                "F",
+                "B",
+                "I"
+            ],
+            "ignore": [
+                "B008"
+            ],
+            "fixable": [
+                "ALL"
+            ]
+        },
+        "format": {
+            "quote-style": "double"
+        }
+    },
+    // Line length setting
+    "ruff.lineLength": 88,
+    // Code actions
+    "ruff.fixAll": true,
+    "ruff.organizeImports": true,
+    // Format on save
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+    },
+    // Set Ruff as default formatter for Python
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "ruff.configurationPreference": "editorFirst",
+    "cSpell.words": [
+        "asyncio",
+        "asyncpg",
+        "fastapi",
+        "isort",
+        "onupdate",
+        "passlib",
+        "pydantic",
+        "sessionmaker",
+        "sqlalchemy",
+        "sqlmodel"
+    ]
+}
