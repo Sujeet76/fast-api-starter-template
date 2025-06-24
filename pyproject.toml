@@ -8,13 +8,17 @@ dependencies = [
     "alembic>=1.16.2",
     "asyncpg>=0.30.0",
     "fastapi[standard]>=0.115.13",
+    "loguru>=0.7.3",
     "passlib[bcrypt]>=1.7.4",
     "pre-commit>=4.2.0",
+    "psutil>=7.0.0",
     "pydantic-settings>=2.10.0",
     "python-jose[cryptography]>=3.5.0",
+    "python-json-logger>=3.3.0",
     "python-multipart>=0.0.20",
     "ruff>=0.12.0",
     "sqlalchemy[asyncio]>=2.0.41",
+    "structlog>=25.4.0",
 ]
 
 [tool.ruff]

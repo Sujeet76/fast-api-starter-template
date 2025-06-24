@@ -14,6 +14,7 @@ A production-ready FastAPI template with best practices, proper structure, and e
 - **UV** - Fast Python package manager
 - **Ruff** - Lightning-fast linting and formatting
 - **Pre-commit** - Code quality hooks
+- **Structured Logging** - JSON and pretty console logging with `structlog`
 
 ## 📁 Project Structure
 
@@ -104,7 +105,26 @@ The API will be available at:
 - **Interactive Docs**: http://localhost:8000/api/v1/docs
 - **ReDoc**: http://localhost:8000/api/v1/redoc
 
-## 🔧 Development
+## � Logging
+
+The application includes a comprehensive logging system with:
+- **Pretty Console Logging** - Colored, readable logs for development
+- **Structured JSON Logging** - Machine-readable logs for production
+- **File Rotation** - Automatic log file management
+- **Performance Monitoring** - Request timing and slow query detection
+
+```bash
+# View logs in real-time (pretty format)
+tail -f logs/app.log
+
+# For different log formats, set environment variables:
+export CONSOLE_LOG_FORMAT=pretty  # For colored console (default)
+export LOG_FORMAT=json           # For file logging format
+```
+
+See [LOGGING.md](LOGGING.md) for detailed documentation.
+
+## �🔧 Development
 
 ### Code Quality
 
